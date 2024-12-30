@@ -1,0 +1,89 @@
+[global]
+monitor = 0
+follow = none
+
+width = 400
+height = (0, 300)
+
+origin = top-right
+offset = (20, 20)
+scale = 0
+notification_limit = 10
+
+progress_bar = true
+progress_bar_height = 10 
+progress_bar_frame_width = 1
+progress_bar_min_width = 150
+progress_bar_max_width = 300
+progress_bar_corner_radius = 3
+progress_bar_corners = all
+
+icon_corner_radius = 3
+icon_corners = all
+indicate_hidden = yes
+
+transparency = 0
+padding = 5
+horizontal_padding = 5
+text_icon_padding = 5
+frame_width = 3
+frame_color = "#3771C8"
+gap_size = 5
+separator_color = frame
+
+sort = update
+idle_threshold = 120
+layer = overlay
+force_xwayland = false
+font = JetBrains Mono Nerd Font 10
+line_height = 1
+
+markup = full
+format = "<b>%a</b> - <b>%s</b>\n%b"
+alignment = center
+vertical_alignment = center
+show_age_threshold = 10
+
+ellipsize = middle
+
+stack_duplicates = true
+hide_duplicate_count = false
+show_indicators = yes
+
+enable_recursive_icon_lookup = true
+icon_theme = Papirus-Dark, Adwaita
+min_icon_size = 32
+max_icon_size = 64
+
+sticky_history = yes
+history_length = 20
+
+dmenu = fuzzel -d dunst
+
+corner_radius = 3
+corners = all
+
+mouse_left_click = do_action
+mouse_middle_click = close_current
+mouse_right_click = context
+
+ignore_dbusclose = false
+
+[urgency_low]
+background = "#101017"
+foreground = "#e2eafc"
+frame_color = "#444444"
+timeout = 10
+
+[urgency_normal]
+background = "#101017"
+foreground = "#e2eafc"
+timeout = 60
+override_pause_level = 30
+
+[urgency_critical]
+    background = "#101017"
+    foreground = "#e2eafc"
+    frame_color = "#ff3e3e"
+    timeout = 0
+    override_pause_level = 60
